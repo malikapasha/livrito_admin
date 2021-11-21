@@ -105,7 +105,7 @@ console.log(" name: " + this.state.name)
 
   const dbData = new FormData();
   dbData.append('image', this.state.image_base64);
-  fetch('https://earnx.biz/foodwala/uploadbaseimage.php', {
+  fetch('http://livritomanager.livrito.com/apis/uploadbaseimage.php', {
     method: 'POST',
     body: dbData,
   })
@@ -115,7 +115,7 @@ console.log(" name: " + this.state.name)
       this.setState(
 
         {
-          image_base64: "https://earnx.biz/foodwala/"+responseJson.imagepath,
+          image_base64: "http://livritomanager.livrito.com/apis/"+responseJson.imagepath,
 
         },
 

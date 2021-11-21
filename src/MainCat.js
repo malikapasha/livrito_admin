@@ -166,7 +166,7 @@ console.log(" image: " + this.state.cat_image)
 
  const dbData = new FormData();
   dbData.append('image', this.state.image_base64);
-  fetch('https://earnx.biz/foodwala/uploadbaseimage.php', {
+  fetch('http://livritomanager.livrito.com/apis/uploadbaseimage.php', {
     method: 'POST',
     body: dbData,
   })
@@ -186,7 +186,7 @@ console.log(" image: " + this.state.cat_image)
 
 const url = "https://livrito.herokuapp.com/categories"  ;
 const data = { cat_name:this.state.cat_name,
-  cat_image: 'https://earnx.biz/foodwala/' + this.state.image_base64, 
+  cat_image: 'http://livritomanager.livrito.com/apis/' + this.state.image_base64, 
   is_deleted:'available',
 
 

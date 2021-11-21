@@ -120,7 +120,7 @@ console.log(" password: " + this.state.password)
 
   const dbData = new FormData();
   dbData.append('image', this.state.image_base64);
-  fetch('https://earnx.biz/foodwala/uploadbaseimage.php', {
+  fetch('http://livritomanager.livrito.com/apis/uploadbaseimage.php', {
     method: 'POST',
     body: dbData,
   })
@@ -143,7 +143,7 @@ console.log(" password: " + this.state.password)
 
 const url = "https://livrito.herokuapp.com/restaurants";
 const data = { name:this.state.name ,
-  image_path: 'https://earnx.biz/foodwala/'+this.state.image_base64, 
+  image_path: 'http://livritomanager.livrito.com/apis/'+this.state.image_base64, 
 address: this.state.address, 
 city:this.state.city ,
 email: this.state.email,

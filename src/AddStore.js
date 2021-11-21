@@ -93,7 +93,7 @@ console.log(" document_one: " + this.state.image_path)
 
   const dbData = new FormData();
   dbData.append('image', this.state.image_base64);
-  fetch('https://earnx.biz/foodwala/uploadbaseimage.php', {
+  fetch('http://livritomanager.livrito.com/apis/uploadbaseimage.php', {
     method: 'POST',
     body: dbData,
   })
@@ -125,7 +125,7 @@ const data = {
     email:this.state.email,
     password:this.state.password,
   is_deleted: 'pending',
-  image_path: 'https://earnx.biz/foodwala/' + this.state.image_base64, 
+  image_path: 'http://livritomanager.livrito.com/apis/' + this.state.image_base64, 
   my_token:'0',
   store_type: this.state.store_type,
    

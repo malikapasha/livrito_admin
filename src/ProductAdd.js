@@ -134,7 +134,7 @@ const url = "https://livrito.herokuapp.com/product";
 
   const dbData = new FormData();
   dbData.append('image', this.state.image_base64);
-  fetch('https://earnx.biz/foodwala/uploadbaseimage.php', {
+  fetch('http://livritomanager.livrito.com/apis/uploadbaseimage.php', {
     method: 'POST',
     body: dbData,
    
@@ -163,7 +163,7 @@ pr_brand: this.state.pr_brand,
 pr_qrcode: this.state.pr_qrcode,
 pr_size: this.state.pr_size,  
 pr_volume: this.state.pr_volume,  
-  pr_image: 'https://earnx.biz/foodwala/' + this.state.image_base64,
+  pr_image: 'http://livritomanager.livrito.com/apis/' + this.state.image_base64,
 
 
   }

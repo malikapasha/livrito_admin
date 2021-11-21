@@ -135,7 +135,7 @@ console.log("Cat_id: " + this.state.maincat_id)
 
 const dbData = new FormData();
   dbData.append('image', this.state.image_base64);
-  fetch('https://earnx.biz/foodwala/uploadbaseimage.php', {
+  fetch('http://livritomanager.livrito.com/apis/uploadbaseimage.php', {
     method: 'POST',
     body: dbData,
   })
@@ -155,7 +155,7 @@ const dbData = new FormData();
 
 const url = "https://livrito.herokuapp.com/subcategories";
 const data = { title:this.state.title,
-  sub_image: 'https://earnx.biz/foodwala/' + this.state.image_base64, 
+  sub_image: 'http://livritomanager.livrito.com/apis/' + this.state.image_base64, 
  
  sub_type:'Sub', 
  

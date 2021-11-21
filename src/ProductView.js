@@ -29,6 +29,34 @@ class ProductView extends React.Component {
 
   }
 
+  deletenow(_id)
+ {
+console.log(_id);
+
+if (window.confirm('Sure to Delete?')) {
+
+const url = "https://livrito.herokuapp.com/removeproduct/";
+fetch(url, { method: 'POST', 
+body: JSON.stringify({
+   product_id:  _id, 
+}),
+headers:{ 'Content-Type': 'application/json' } })
+.then(res => res.json())
+.then((data) => {
+      
+      console.log(data)
+      window.location.reload()
+    
+      
+})
+.catch(error => console.error('Error:', error))
+ console.log('Thing was saved to the database.');
+} else {
+  // Do nothing!
+  console.log('Thing was not saved to the database.');
+}
+ }
+
   handleChangee = event =>{
 
 this.setState({file_path: event.target.value});
@@ -278,11 +306,13 @@ headers:{ 'Content-Type': 'application/json' } })
                           <th>Image</th>
                           <th>Price</th>
                           <th>Product Size</th>
-                          <th>Product Brand</th>
+                       
                           <th>Volume</th>
                           <th>Qr Code</th>
 
                           <th>Action</th>
+  <th>Delete</th>
+
 
 
 
@@ -302,7 +332,7 @@ headers:{ 'Content-Type': 'application/json' } })
                               <td><img src={item.pr_image} style={{ width: 50, height: 50 }} /></td>
                               <td>{item.price}</td>
                               <td>{item.pr_size}</td>
-                              <td>{item.pr_brand}</td>
+                              {/* <td>{item.pr_brand}</td> */}
                               <td>{item.pr_volume}</td>
                               <td>{item.pr_qrcode}</td>
 
@@ -320,6 +350,15 @@ headers:{ 'Content-Type': 'application/json' } })
 
                               </td>
 
+      <td>
+      <button  class="btn btn-info btn-sm"
+  style={{marginLeft:5}}
+   onClick ={this.deletenow.bind(this , item._id)} >
+                              <i class="fa fa-trash">
+                              </i>
+                            
+                          </button>
+      </td>
                             </tr>
                           )}
                       </tbody>
