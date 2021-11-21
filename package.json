@@ -1,0 +1,69 @@
+{
+  "name": "livritro",
+  "version": "0.1.1",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "antd": "^4.1.5",
+    "AsyncStorage": "^0.1.5",
+    "axios": "^0.19.2",
+    "beauty-stars": "^1.1.0",
+    "caniuse-lite": "^1.0.30001223",
+    "email-validator": "^2.0.4",
+    "firebase": "^7.14.2", 
+    "fixed-data-table-2": "^1.1.0",
+    "material-ui": "^0.20.2",
+    "model": "^6.0.1",
+    "node-sass": "^4.14.1",
+    "node-uuid": "^1.4.8",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.0",
+    "react-adsense": "^0.1.0",
+    "react-detect-offline": "^2.4.0",
+    "react-dom": "^16.13.1",
+    "react-excel-renderer": "^1.1.0",
+    "react-icons": "^3.10.0",
+    "react-id-generator": "^3.0.0",
+    "react-modal": "^3.11.2",
+  
+    "react-price": "^0.6.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "react-share": "^4.1.0",
+
+    "react-star-rating-component": "^1.4.1",
+    "react-star-ratings": "^2.3.0",
+    "react-strap": "0.0.1",
+    "react-switch": "^5.0.1",
+    "react-tap-event-plugin": "^3.0.3",
+    "reactstrap": "^8.4.1",
+    "validator": "^13.0.0"
+  
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.1"
+  }
+}
