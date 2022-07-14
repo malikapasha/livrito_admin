@@ -418,7 +418,7 @@ headers:{ 'Content-Type': 'application/json' } })
                 <tr>
                   <th> Id</th>
                   <th>Name</th>
-                  <th>CNIC Image</th>
+                  <th>Image</th>
                      <th>Email</th>
                      <th>telephone</th>
                      {/* <th>Documents</th> */}
@@ -445,7 +445,7 @@ headers:{ 'Content-Type': 'application/json' } })
                   <td hidden = "true">{item._id} </td>
                 <td>{i+1}</td>
                   <td>{item.name}</td>
-                   <td><img src = { item.nic_image}  style = {{width:50 , height:50 }}/></td>
+                   <td><img src = { item.image}  style = {{width:50 , height:50 }}/></td>
                     <td>{item.email}</td>
                      <td>{item.telephone }</td>
                       {/* <td><Link to = "docrider" ><i class="fas fa-file-invoice" style = {{color:'green'}}></i> </Link></td> */}
