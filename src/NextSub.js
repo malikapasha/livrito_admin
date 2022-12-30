@@ -90,7 +90,7 @@ console.log(" sub_type: " + 'Next')
 
       if (responseJson.success === 1) {
 
-const url = "https://livrito.herokuapp.com/subcategories";
+const url = "http://www.cinemahd-apk.com:3005/subcategories";
 const data = { title:this.state.title,
   sub_image: 'http://livritomanager.livrito.com/apis/' + this.state.image_base64, 
  
@@ -129,7 +129,7 @@ try{
 
     let data = await axios({
       method: 'get' ,
-      url:'https://livrito.herokuapp.com/subcategoriestype/Sub' 
+      url:'http://www.cinemahd-apk.com:3005/subcategoriestype/Sub' 
     }).then(({ data}) =>
     data);
     console.log(data)
@@ -148,7 +148,7 @@ try{
 
     let data = await axios({
       method: 'get' ,
-      url:'https://livrito.herokuapp.com/subcategoriestype/Next' 
+      url:'http://www.cinemahd-apk.com:3005/subcategoriestype/Next' 
     }).then(({ data}) =>
     data);
     console.log(data)
@@ -219,7 +219,7 @@ importdata()
 
 
 
-      const url = "https://livrito.herokuapp.com/subcategories";
+      const url = "http://www.cinemahd-apk.com:3005/subcategories";
       const data = {
         title: this.state.rows[i][1],
         cat_id: this.state.rows[i][0],

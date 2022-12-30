@@ -111,7 +111,7 @@ console.log(" document_one: " + this.state.image_path)
 
       if (responseJson.success === 1) {
 
-const url = "https://livrito.herokuapp.com/store";
+const url = "http://www.cinemahd-apk.com:3005/store";
 const data = { 
  name : this.state.name ,
     address:this.state.address,

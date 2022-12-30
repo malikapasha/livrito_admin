@@ -35,7 +35,7 @@ console.log(_id);
 
 if (window.confirm('Sure to Delete?')) {
 
-const url = "https://livrito.herokuapp.com/removeproduct/";
+const url = "http://www.cinemahd-apk.com:3005/removeproduct/";
 fetch(url, { method: 'POST', 
 body: JSON.stringify({
    product_id:  _id, 
@@ -141,7 +141,7 @@ importdata()
 
    console.log("Data" + data);
 
-    const url = "https://livrito.herokuapp.com/bulkproduct";
+    const url = "http://www.cinemahd-apk.com:3005/bulkproduct";
 
 fetch(url, { method: 'POST', 
 body: JSON.stringify(data),
@@ -194,7 +194,7 @@ headers:{ 'Content-Type': 'application/json' } })
 
       let data = await axios({
         method: 'get',
-        url: 'https://livrito.herokuapp.com/productstr/'+st_id
+        url: 'http://www.cinemahd-apk.com:3005/productstr/'+st_id
       }).then(({ data }) =>
         data);
       console.log(data)

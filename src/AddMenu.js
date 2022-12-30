@@ -123,7 +123,7 @@ console.log(" name: " + this.state.name)
 
       if (responseJson.success === 1) {
 
-const url = "https://livrito.herokuapp.com/menu";
+const url = "http://www.cinemahd-apk.com:3005/menu";
 const data = {
    menu_name:this.state.menu_name, 
   image_path_one:this.state.image_base64 , 

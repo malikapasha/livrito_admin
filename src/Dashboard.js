@@ -51,7 +51,7 @@ try{
       let data = await axios({
       method: "get",
       url:
-        "https://livrito.herokuapp.com/resorder/"+localStorage.getItem("_id"),
+        "http://www.cinemahd-apk.com:3005/resorder/"+localStorage.getItem("_id"),
     }).then(({ data }) => data);
 
     orderdata = data.order;
@@ -62,7 +62,7 @@ try{
     let data = await axios({
       method: "get",
       url:
-        "https://livrito.herokuapp.com/allorders",
+        "http://www.cinemahd-apk.com:3005/allorders",
     }).then(({ data }) => data);
 
     orderdata = data.allorders;
@@ -114,7 +114,7 @@ try{
     let data = await axios({
       method: "get",
       url:
-        "https://livrito.herokuapp.com/restaurants",
+        "http://www.cinemahd-apk.com:3005/restaurants",
     }).then(({ data }) => data);
     console.log(data)
    var i;
@@ -155,7 +155,7 @@ try{
          let data = await axios({
            method: "get",
            url:
-             "https://livrito.herokuapp.com/findAllstoresadmin",
+             "http://www.cinemahd-apk.com:3005/findAllstoresadmin",
          }).then(({ data }) => data);
          console.log(data)
          var i;

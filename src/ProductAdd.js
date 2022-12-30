@@ -129,7 +129,7 @@ console.log(" pr_image: " + this.state.pr_image)
 
 
 
-const url = "https://livrito.herokuapp.com/product";
+const url = "http://www.cinemahd-apk.com:3005/product";
 
 
   const dbData = new FormData();
@@ -204,7 +204,7 @@ headers:{ 'Content-Type': 'application/json' } })
     try {
       let data = await axios({
         method: 'get',
-        url: 'https://livrito.herokuapp.com/categories'
+        url: 'http://www.cinemahd-apk.com:3005/categories'
       }).then(({ data }) =>
         data);
       console.log(data)
@@ -224,7 +224,7 @@ headers:{ 'Content-Type': 'application/json' } })
     try {
       let data = await axios({
         method: 'get',
-        url: 'https://livrito.herokuapp.com/subcategories/' + searchid
+        url: 'http://www.cinemahd-apk.com:3005/subcategories/' + searchid
       }).then(({ data }) =>
         data);
       console.log(data)
@@ -243,7 +243,7 @@ headers:{ 'Content-Type': 'application/json' } })
     try {
       let data = await axios({
         method: 'get',
-        url: 'https://livrito.herokuapp.com/subcategories/'+ searchid
+        url: 'http://www.cinemahd-apk.com:3005/subcategories/'+ searchid
       }).then(({ data }) =>
         data);
       console.log(data)

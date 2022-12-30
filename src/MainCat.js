@@ -87,7 +87,7 @@ handleDeleteRow(i) {
 
     let data = await axios({
       method: 'get' ,
-      url:'https://livrito.herokuapp.com/categories' 
+      url:'http://www.cinemahd-apk.com:3005/categories' 
     }).then(({ data}) =>
     data);
     console.log(data)
@@ -127,7 +127,7 @@ importdata()
  console.log(" _id : " +  this.state.editData._id)
 
 console.log(" status: " + this.state.editData.is_deleted)
-const url = "https://livrito.herokuapp.com/categorieupdate";
+const url = "http://www.cinemahd-apk.com:3005/categorieupdate";
 const data = { _id: this.state.editData._id, 
 
 is_deleted:this.state.editData.is_deleted, 
@@ -184,7 +184,7 @@ console.log(" image: " + this.state.cat_image)
 
       if (responseJson.success === 1) {
 
-const url = "https://livrito.herokuapp.com/categories"  ;
+const url = "http://www.cinemahd-apk.com:3005/categories"  ;
 const data = { cat_name:this.state.cat_name,
   cat_image: 'http://livritomanager.livrito.com/apis/' + this.state.image_base64, 
   is_deleted:'available',
@@ -258,7 +258,7 @@ fileHandler = (event) => {
 
 
 
-      const url = "https://livrito.herokuapp.com/categories";
+      const url = "http://www.cinemahd-apk.com:3005/categories";
       const data = {
         cat_name: this.state.rows[i][0],
         cat_image: this.state.rows[i][1],

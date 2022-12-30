@@ -43,7 +43,7 @@ class PendingRes extends Component
 
     let data = await axios({
       method: 'get' ,
-      url:'https://livrito.herokuapp.com/restaurants' 
+      url:'http://www.cinemahd-apk.com:3005/restaurants' 
     }).then(({ data}) =>
     data);
     console.log(data.restaurants)

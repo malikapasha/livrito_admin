@@ -1,7 +1,7 @@
 export function postData(type , userData)
 {
 
-    let baseUrl = 'https://livrito.herokuapp.com/users/';
+    let baseUrl = 'http://www.cinemahd-apk.com:3005/users/';
     return new Promise((resolve , reject) =>
     {
    fetch(baseUrl+ type ,

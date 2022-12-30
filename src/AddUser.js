@@ -92,7 +92,7 @@ console.log(" contact: " + this.state.contact)
 
 
 
-const url = "https://livrito.herokuapp.com/users";
+const url = "http://www.cinemahd-apk.com:3005/users";
 const data = { name:this.state.name, 
 email:this.state.email , 
 password: this.state.password, 

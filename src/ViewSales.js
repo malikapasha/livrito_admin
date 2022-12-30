@@ -10,7 +10,7 @@ import Content from './Content';
 import axios from 'axios';
 import { Link, BrowserRouter, Redirect} from 'react-router-dom';
 import { Button, Form,FormText, Col, Row, Label,Dropdown,ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem,  Modal, ModalHeader, FormGroup ,ModalBody, ModalFooter,InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
-const url = "https://livrito.herokuapp.com/ryderupdatestatus";
+const url = "http://www.cinemahd-apk.com:3005/ryderupdatestatus";
 
 class ViewRiders extends Component
 {
@@ -140,7 +140,7 @@ handleDeleteRow(i) {
 
     let data = await axios({
       method: 'get' ,
-      url:'https://livrito.herokuapp.com/salesconfirmer' 
+      url:'http://www.cinemahd-apk.com:3005/salesconfirmer' 
     }).then(({ data}) =>
    {
      console.log(data.data)
@@ -161,7 +161,7 @@ console.log(_id);
 
 if (window.confirm('Sure to Delete?')) {
 
-const url = "https://livrito.herokuapp.com/removesaler";
+const url = "http://www.cinemahd-apk.com:3005/removesaler";
 fetch(url, { method: 'POST', 
 body: JSON.stringify({
    _id:  _id, 
@@ -203,7 +203,7 @@ status:this.state.editData.status,
 
   }
 
-    let turl = 'https://livrito.herokuapp.com/salesupdatestatus';
+    let turl = 'http://www.cinemahd-apk.com:3005/salesupdatestatus';
   
 fetch(turl, { method: 'POST', 
 body: JSON.stringify({

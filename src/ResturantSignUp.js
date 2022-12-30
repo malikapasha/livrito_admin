@@ -141,7 +141,7 @@ console.log(" password: " + this.state.password)
       
 
 
-const url = "https://livrito.herokuapp.com/restaurants";
+const url = "http://www.cinemahd-apk.com:3005/restaurants";
 const data = { name:this.state.name ,
   image_path: 'http://livritomanager.livrito.com/apis/'+this.state.image_base64, 
 address: this.state.address, 

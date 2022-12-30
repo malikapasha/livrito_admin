@@ -32,7 +32,7 @@ handleSubmit = event =>{
 event.preventDefault();
 console.log(" name : " + this.state.cat_name)
 console.log(" image: " + this.state.cat_image)
-const url = "https://livrito.herokuapp.com/categories";
+const url = "http://www.cinemahd-apk.com:3005/categories";
 const data = { cat_name:this.state.cat_name,
 cat_image:this.state.cat_image, 
 

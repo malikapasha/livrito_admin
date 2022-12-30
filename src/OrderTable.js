@@ -55,7 +55,7 @@ class OrderTable  extends Component
 if (answer) {
   
 
- let turl = 'https://livrito.herokuapp.com/assignorder';
+ let turl = 'http://www.cinemahd-apk.com:3005/assignorder';
      fetch(turl, {
        method: 'POST',
        body: JSON.stringify({
@@ -105,11 +105,11 @@ else {
 
     
       try{
-  let turl = 'https://livrito.herokuapp.com/allorders';
+  let turl = 'http://www.cinemahd-apk.com:3005/allorders';
   if(localStorage.getItem('admin')!='true')
   {
     turl =
-      "https://livrito.herokuapp.com/resorder/"+localStorage.getItem('_id');
+      "http://www.cinemahd-apk.com:3005/resorder/"+localStorage.getItem('_id');
 
        let data = await axios({
     method: "get",
@@ -124,7 +124,7 @@ else {
   else
   {
     
-     turl = 'https://livrito.herokuapp.com/allorders';
+     turl = 'http://www.cinemahd-apk.com:3005/allorders';
 
      let data = await axios({
     method: "get",
@@ -144,7 +144,7 @@ else {
 
           let datarid = await axios({
             method: 'get',
-            url: 'https://livrito.herokuapp.com/approvedryders'
+            url: 'http://www.cinemahd-apk.com:3005/approvedryders'
           }).then(({ data }) => {
           
          
@@ -190,7 +190,7 @@ toggleNewOrders()
      try{
     let data = await axios({
       method: 'get' ,
-      url:'https://livrito.herokuapp.com/ryder/'+assigned_to 
+      url:'http://www.cinemahd-apk.com:3005/ryder/'+assigned_to 
     }).then(({ data}) =>
     data);
     console.log(data)
@@ -213,7 +213,7 @@ if (window.confirm('Sure to Delete?')) {
   // Save it!
  
 
-const url = "https://livrito.herokuapp.com/deleteorder/"+_id;
+const url = "http://www.cinemahd-apk.com:3005/deleteorder/"+_id;
 const data = { _id: this.state.editData._id, 
 status:this.state.editData.status, 
 
@@ -282,7 +282,7 @@ console.log(" status: " + this.state.editData.status)
 
 
 
-const url = "https://livrito.herokuapp.com/updateorderstatus";
+const url = "http://www.cinemahd-apk.com:3005/updateorderstatus";
 const data = { _id: this.state.editData._id, 
 status:this.state.editData.status, 
 

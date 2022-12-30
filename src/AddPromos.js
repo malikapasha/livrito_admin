@@ -83,7 +83,7 @@ console.log(" res_id: " + this.state.res_id)
 
 
 
-const url = "https://livrito.herokuapp.com/promos";
+const url = "http://www.cinemahd-apk.com:3005/promos";
 const data = { code:this.state.code, 
 amount:this.state.amount , 
 minorder: this.state.minorder, 

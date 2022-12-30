@@ -118,7 +118,7 @@ console.log(" is_online: " + this.state.is_online)
 
       if (responseJson.success === 1) {
 
-const url = "https://livrito.herokuapp.com/ryder";
+const url = "http://www.cinemahd-apk.com:3005/ryder";
 const data = { 
  name : this.state.name ,
     address:this.state.address,

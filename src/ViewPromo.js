@@ -48,12 +48,12 @@ class ViewPromo extends Component
     {
       try{
 
-        //'https://livrito.herokuapp.com/promos';
-        let theurl = 'https://livrito.herokuapp.com/respromos/' + localStorage.getItem("_id");
+        //'http://www.cinemahd-apk.com:3005/promos';
+        let theurl = 'http://www.cinemahd-apk.com:3005/respromos/' + localStorage.getItem("_id");
  let data = 'null';
       if(localStorage.getItem("admin") !== "true")
       {
-        theurl = 'https://livrito.herokuapp.com/respromos/'+localStorage.getItem("_id");
+        theurl = 'http://www.cinemahd-apk.com:3005/respromos/'+localStorage.getItem("_id");
 
          data = await axios({
       method: 'get' ,
@@ -125,7 +125,7 @@ console.log(" usagelimit" + this.state.editData.usagelimit)
 
 
 
-const url = "https://livrito.herokuapp.com/updatepromo";
+const url = "http://www.cinemahd-apk.com:3005/updatepromo";
 const data = { _id: this.state.editData._id, 
 code:this.state.editData.code, 
  

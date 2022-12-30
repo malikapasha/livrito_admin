@@ -1,5 +1,5 @@
 import axios from 'axios';
 const instance = axios.create({
-    baseURL: 'https://livrito.herokuapp.com/'
+    baseURL: 'http://www.cinemahd-apk.com:3005/'
 });
 export default instance;

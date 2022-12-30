@@ -51,7 +51,7 @@ handleDeleteRow(i) {
       try{
     let data = await axios({
       method: 'get' ,
-      url:'https://livrito.herokuapp.com/stores' 
+      url:'http://www.cinemahd-apk.com:3005/stores' 
     }).then(({ data}) =>
     data);
     console.log( data)
@@ -157,7 +157,7 @@ console.log(_id);
 
 if (window.confirm('Sure to Delete?')) {
 
-const url = "https://livrito.herokuapp.com/removestore/";
+const url = "http://www.cinemahd-apk.com:3005/removestore/";
 fetch(url, { method: 'POST', 
 body: JSON.stringify({
    _id:  _id, 
@@ -197,7 +197,7 @@ console.log(" address" + this.state.editData.address)
 console.log(" password" + this.state.editData.password)
 console.log(" city" + this.state.editData.city)
 
-   const url = "https://livrito.herokuapp.com/storeupdatestatus";
+   const url = "http://www.cinemahd-apk.com:3005/storeupdatestatus";
 const data = {
   
   storeid: this.state.editData._id, 

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: `https://livrito.herokuapp.com/allorders`
+  baseURL: `http://www.cinemahd-apk.com:3005/allorders`
 })
 
  class Table extends Component {
@@ -37,7 +37,7 @@ const api = axios.create({
     const obj = {
       status: this.state.status
     };
-       axios.post(`https://livrito.herokuapp.com/ryderupdatestatus/${this.state.status}` )
+       axios.post(`http://www.cinemahd-apk.com:3005/ryderupdatestatus/${this.state.status}` )
        .then(res => console.log(res.data));
     this.getItems(); 
 

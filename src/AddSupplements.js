@@ -76,7 +76,7 @@ console.log(" name: " + this.state.name)
 
 
 
-  const url = "https://livrito.herokuapp.com/supplement";
+  const url = "http://www.cinemahd-apk.com:3005/supplement";
 const data = {
   name:this.state.name, 
 price:this.state.price ,

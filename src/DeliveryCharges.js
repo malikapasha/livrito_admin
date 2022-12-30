@@ -54,7 +54,7 @@ notificationtext:'',
       let data = await axios({
         method: "get",
         url:
-          "https://livrito.herokuapp.com/charges",
+          "http://www.cinemahd-apk.com:3005/charges",
       }).then(({ data }) => data);
       console.log(data);
       console.log(data[0].del_charges);
@@ -179,7 +179,7 @@ notificationtext:'',
     console.log(" unit " + this.state.editData.cost_unit);
 
     const url =
-      "https://livrito.herokuapp.com/updatecharges";
+      "http://www.cinemahd-apk.com:3005/updatecharges";
     const data = {
       _id: this.state.editData._id,
       del_charges: this.state.editData.del_charges,

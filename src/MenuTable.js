@@ -77,7 +77,7 @@ handleDeleteRow(i) {
 
     let data = await axios({
       method: 'get' ,
-      url: 'https://livrito.herokuapp.com/menu/' + res_id 
+      url: 'http://www.cinemahd-apk.com:3005/menu/' + res_id 
     }).then(({ data}) =>
     {
 
@@ -131,7 +131,7 @@ console.log(" image " + this.state.editData.image_path_one)
 
 
 
-const url = "https://livrito.herokuapp.com/updateorderstatus";
+const url = "http://www.cinemahd-apk.com:3005/updateorderstatus";
 const data = { _id: this.state.editData._id, 
 name:this.state.editData.name, 
 menu_name:this.state.editData.menu_name, 

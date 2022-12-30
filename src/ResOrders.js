@@ -46,7 +46,7 @@ class ResOrders  extends Component
 
   let data =   await axios({
       method: 'get' ,
-      url:'https://livrito.herokuapp.com/resorder/5e8d28f8b1a88f4c8886d28b' 
+      url:'http://www.cinemahd-apk.com:3005/resorder/5e8d28f8b1a88f4c8886d28b' 
     }).
     then(({ data}) =>
     data);
@@ -88,7 +88,7 @@ console.log(" status: " + this.state.editData.status)
 
 
 
-const url = "https://livrito.herokuapp.com/updateorderstatus";
+const url = "http://www.cinemahd-apk.com:3005/updateorderstatus";
 const data = { _id: this.state.editData._id, 
 status:this.state.editData.status, 
 

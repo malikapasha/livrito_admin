@@ -69,7 +69,7 @@ export default class Login extends Component {
 
     // else {
 
-    //   fetch('https://livrito.herokuapp.com/reslogin', {
+    //   fetch('http://www.cinemahd-apk.com:3005/reslogin', {
     //     method: 'post',
     //     headers: {
     //       'Content-Type': 'application/json',

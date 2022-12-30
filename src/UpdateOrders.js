@@ -41,7 +41,7 @@ console.log(" status: " + this.state.status)
 
 
 
-const url = "https://livrito.herokuapp.com/updateorderstatus";
+const url = "http://www.cinemahd-apk.com:3005/updateorderstatus";
 const data = { _id: this.state._id, 
 status:this.state.status , 
 

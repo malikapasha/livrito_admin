@@ -84,7 +84,7 @@ console.log(" usagelimit" + this.state.editData.usagelimit)
 
 
 
-const url = "https://livrito.herokuapp.com/updatepromo";
+const url = "http://www.cinemahd-apk.com:3005/updatepromo";
 const data = { _id: this.state.editData._id, 
 code:this.state.editData.code, 
  

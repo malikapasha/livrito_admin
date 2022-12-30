@@ -43,7 +43,7 @@ getItems = async () =>
 
   let data =   await axios({
       method: 'get' ,
-    url: 'https://livrito.herokuapp.com/orderproduct/' + localStorage.getItem('orid') 
+    url: 'http://www.cinemahd-apk.com:3005/orderproduct/' + localStorage.getItem('orid') 
     }).then(({data}) => {
        console.log(data.menu);
        
@@ -55,7 +55,7 @@ this.setState({Items: data.menu});
   {
           let data = await axios({
             method: 'get',
-            url: 'https://livrito.herokuapp.com/ordermenu/' + localStorage.getItem('orid') 
+            url: 'http://www.cinemahd-apk.com:3005/ordermenu/' + localStorage.getItem('orid') 
           }).then(({ data }) => {
             console.log(data.menu);
 

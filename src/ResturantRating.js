@@ -54,7 +54,7 @@ apiUsers = [];
 
     let data = await axios({
       method: 'get' ,
-      url:'https://livrito.herokuapp.com/ratings' 
+      url:'http://www.cinemahd-apk.com:3005/ratings' 
     }).then(({ data}) =>
     {
 console.log(data)

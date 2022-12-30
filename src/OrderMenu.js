@@ -47,7 +47,7 @@ handleDeleteRow(i) {
 
     let data = await axios({
       method: 'get' ,
-      url:'https://livrito.herokuapp.com/ordermenu/5eb6f9b4f8f8cb00171112b2' 
+      url:'http://www.cinemahd-apk.com:3005/ordermenu/5eb6f9b4f8f8cb00171112b2' 
     }).then(({ data}) =>
     data);
     console.log(data.menu)

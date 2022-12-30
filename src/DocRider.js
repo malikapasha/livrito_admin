@@ -72,7 +72,7 @@ editOrder(_id, name , email , contact , document_one , document_two)
 
     let data = await axios({
       method: 'get' ,
-      url:'https://livrito.herokuapp.com/ryders' 
+      url:'http://www.cinemahd-apk.com:3005/ryders' 
     }).then(({ data}) =>
     data);
     console.log(data.ryders)
@@ -99,7 +99,7 @@ console.log(" document: " + this.state.editData.document_two)
 
  
 
-const url = "https://livrito.herokuapp.com/ryderupdatestatus";
+const url = "http://www.cinemahd-apk.com:3005/ryderupdatestatus";
 const data = { _id: this.state.editData._id, 
 status:this.state.editData.status, 
 
